@@ -82,11 +82,24 @@ The precision is still at 1% but the sensitivity is slighty improved to 70% and 
 This is an ensemble method in which each tree of the forest will be provided a balanced bootstrap sample.
 
 The balanced accuraccy score improved to 79%.
+
 ![image](https://user-images.githubusercontent.com/114631804/228937356-2bcb8022-ef42-446c-bd68-a810032d4458.png)
 
-The precision is at 4%, sensitivity is 67% and F1-score is 0.07.
+The precision for high risk is at 4%, sensitivity is 67% and F1-score is 0.07.
 ![image](https://user-images.githubusercontent.com/114631804/228937705-9ee3ff2e-246b-4f89-be90-196b5056f77f.png)
 
 ### EasyEnsembleClassifier model
+This method allows to bag AdaBoost learners which are trained on balanced bootstrap samples. An Adaboost on the other hand, according to https://scikit-learn.org/, "is a meta-estimator that begins by fitting a classifier on the original dataset and then fits additional copies of the classifier on the same dataset but where the weights of incorrectly classified instances are adjusted such that subsequent classifiers focus more on difficult cases".
+
+The balanced accuracy score for this model is 92.5%
+
+![image](https://user-images.githubusercontent.com/114631804/228940816-36cb435a-1a66-4d49-bd3c-185eed0f1977.png)
+
+The precision is way improved at 7% with the sensitivity up to 91%, F1-score is 0.14.
+This proves to be the best model we have evaluated so far.
+
+![image](https://user-images.githubusercontent.com/114631804/228941255-e996383b-d46f-4de1-a904-32b3813a35c1.png)
 
 ## Summary
+
+In conclusion, none of the model is perfect since all the models show week precision in determining  if a credit risk is high. The Ensemble models shows a lot of improvement, especially on the sensitivity of the high risk credits. The EasyEnsembleClassifier model shows the most potential with a recall of 92.5%. However, with a low precision, a lot of low risk are still falsely detected as high risk and vice versa, which would impact the bank potential revenue. Therefore, I would recommend further collect data to improve the balance of our dataset and to better train our model. This way we will have a better model in the future to precisely predict the credit risks for our creditors.
