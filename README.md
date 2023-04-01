@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Overview
-Credit risk is an inherently unbalanced classification problem, as good loans easily outnumbered risky loans. Therefore, we will need to employ different techniques to train an evaluate models with unbalanced classes. In this analysis, we will be using the credit card credit dataset from LendingClub, a peer-to-peer lending services company to do the following:
+Credit risk is an inherently unbalanced classification problem, as good loans easily outnumbered risky loans. Therefore, we will need to employ different techniques to train an evaluate models with unbalanced classes. In this analysis, we will be using the credit card dataset from LendingClub, a peer-to-peer lending services company to do the following:
 
     * Oversample the data using the RandomOverSample and SMOTE algorithms
     * Undersample the data using the ClsuterCentroids algorithm
@@ -9,7 +9,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
     * Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier
     to predict credit risk
     
-At the end, based in the evaluation of these models performance, we will make a recommendation on whether they could be used to predict redit risk.    
+At the end, based on the evaluation of these models performance, we will make a recommendation on whether they could be used to predict credit risk.    
 
 ## Results
 
