@@ -13,7 +13,7 @@ At the end, based on the evaluation of these models performance, we will make a 
 
 ## Results
 
-After import and examine our dataset, we found that our target data is highly skewed toward low risk 68470 datapoints versus 347 datapoints. It become more prevalent when we spit the targeted data to train and test set as shown below.
+After import and examine our dataset, we found that our targeted data is highly skewed toward low risk, 68470 datapoints versus 347 datapoints. It become more prevalent when we split the targeted data to train and test set as shown below.
 
 ![image](https://user-images.githubusercontent.com/114631804/228913423-07c6f4cb-a51e-4723-93b6-c985ce5921f4.png)
 
